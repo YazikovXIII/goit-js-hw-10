@@ -15,7 +15,7 @@ fetchCountriesInput.addEventListener(
 );
 
 function onInput(evt) {
-  if (!evt.target.value) {
+  if (!evt.target.value.trim()) {
     countriesList.innerHTML = '';
     countryInfo.innerHTML = '';
     return;
@@ -37,7 +37,6 @@ function onInput(evt) {
       }
     })
     .catch(error => {
-      console.log(error);
       if (error.message === 'Not Found') {
         Notify.failure('Oops, there is no country with that name');
         countriesList.innerHTML = '';
