@@ -17,4 +17,22 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.country-list {
+  list-style: none;
+}
+
+.country-list li:not(:first-child) {
+  margin-top: 50px;
+}
+
+.country-info {
+  margin-left: 20px;
+}
+
+.country-info-span {
+  font-weight: 700;
 }
